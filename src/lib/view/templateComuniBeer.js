@@ -4,15 +4,16 @@ export const comuniBeer = () => {
     <div id="containerComunity">  
     <div id="banner">
     <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer"></div>
-    <div class="comments">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="comments">
       <div class="textComments">
         <h3 class="titleInicio">Crea tu reseña cervecera</h3>
         <div class="ec-stars-wrapper">
-      	<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-  	    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-  	    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-  	    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-      	<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
         </div>
         <br>
         <input type="text" id="marcaC" placeholder='Marca de tu cerveza' class='inputInicio'></input>
@@ -21,6 +22,7 @@ export const comuniBeer = () => {
         <br>
         <button class='btnInicio' id='btn-comment'>Comentar!</button>
         <body id='tabla'>
+    </div>
     </div>
     </div>
     <div>

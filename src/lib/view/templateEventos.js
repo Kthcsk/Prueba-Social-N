@@ -1,7 +1,7 @@
 export const eventos = () => {
     const divEventos = document.createElement('div');
   const viewEventos = `   
-     <div class="banner">
+     <div class="banner d-flex justify-content-center">
      <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
     </div>
     <div class="carousel">
