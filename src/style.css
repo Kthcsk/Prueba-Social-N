@@ -1,3 +1,5 @@
+/* Ordenar CSS */
+/* Documento */
 body {
   margin: 0px;
   padding: 0px;
@@ -18,7 +20,7 @@ body {
   justify-content: center;
 }
 
-/* galería */
+/* galería evento */
 
 .carousel {
   position: relative;
@@ -139,9 +141,10 @@ body {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
-/* fin galería */
+/* fin galería evento */
 
-#background {
+/* Home */
+#background-home {
   width: 100%;
   height: 100%;
   color: #DDDDDD;
@@ -154,6 +157,19 @@ body {
 	flex-direction: row;
 }
 
+.container-background {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.background-map {
+  background-image: url("../src/img/mapa.png");
+  width: 100%;
+  height: 100%;
+}
+
 #logoIniciar {
   width: 45%;
   padding-bottom: 1px;
@@ -162,6 +178,24 @@ body {
 #logoHome {
   width: 25%;
 }
+
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.lineHome{
+  width: 60%;
+  margin: 10px;
+}
+
+/* fin Home */
 
 /* Blog */
 #containerViewBlog {
@@ -175,12 +209,6 @@ a {
 .logoBanner {
   width: 15%;
   min-width: 80px;
-  padding-bottom: 1px;
-}
-
-#banner {
-  display: flex;
-  justify-content: center;
 }
 
 .imgEntrance {
@@ -194,7 +222,7 @@ padding: 0 20px;
 
 /* fin blog */
 
-#titleInicio {
+#titleHome {
   font-size: 50px;
   font-weight: 700;
   margin: 0;
@@ -563,6 +591,7 @@ h2 {
   overflow: hidden;
   display: inline-block;
   float: left;
+  background-color: white;
 }
 
 .shopOnline-card-text {
@@ -577,10 +606,12 @@ h2 {
 
 .shopOnline-card {
   margin-top: 15px;
+  background-color: whitesmoke;
 }
 
 /*fin*/
 
+/*donde beber*/
 .map {
   display: flex;
   justify-content: center;
@@ -588,24 +619,31 @@ h2 {
   height: 100%;
   padding: 50px 0;
 }
+/**/
 
 /* iniciar sesión */
 
-.titleInicio {
-  font-family: "Titillium Web", sans-serif;
-	font-weight: 600;
-	margin: 0;
+.background-iniciar {
+  background-image: url(./img/iniciar.jpg);
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
 }
 
-.inputInicio {
-	background-color: rgb(224, 224, 224);
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-  width: 60%;
+.titleInicio {
+	font-weight: 400;
+  margin: 0;
+  color:white;
 }
-.inputInicio:focus {
-  outline: 0.2px solid rgb(110, 110, 110);
+
+.titleSesion{
+  font-weight: 400;
+  margin: 0;
+  color:black;
 }
 
 #forgetPassword {
@@ -620,39 +658,6 @@ h2 {
   transition: 0.3s;
 }
 
-#btn-coomment {
-  display: flex;
-}
-
-.btnInicio {
-  cursor: pointer;
-	border-radius: 20px;
-	border: 0.5px darkorange;
-  background-color: #f7a62d;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
-  0 1px 1px rgba(0,0,0,0.2);
-	font-size: 12px;
-  font-weight: bold;
-  padding: 12px 45px;
-  margin: 10px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-  transition: transform 80ms ease-in;
-}
-
-.btnInicio:active {
-  transform: scale(0.95);
-}
-
-.btnInicio:focus {
-  outline: none;
-}
-
-.btnInicio:hover {
-  background-color: #d88417;
-  transition: 0.3s;
-}
-
 .social-container {
 	margin: 20px;
 }
@@ -660,11 +665,6 @@ h2 {
 .social:focus {
 	outline: none;
 }
-
-/* .social:hover {
-  background-color: rgb(168, 168, 168);
-  transition: 0.3s;
-} */
 
 .social-container button {
   cursor: pointer;
@@ -678,21 +678,32 @@ h2 {
 	width: 50px;
 }
 
-#google:hover {
+#google-i:hover {
   background-color: #BA3B2C;
   transition: 0.3s;
   color: #DDDDDD;
 }
 
-#facebook:hover {
+#google-r:hover {
+  background-color: #BA3B2C;
+  transition: 0.3s;
+  color: #DDDDDD;
+}
+
+#facebook-r:hover {
+  background-color: #4064AD;
+  transition: 0.3s;
+  color: #DDDDDD;
+}
+
+#facebook-i:hover {
   background-color: #4064AD;
   transition: 0.3s;
   color: #DDDDDD;
 }
 
 .sign-in-container {
-  background-color: rgb(177, 177, 177);
-	border-radius: 10px;
+  border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	display: flex;
@@ -702,7 +713,7 @@ h2 {
 	font-family: "Titillium Web", sans-serif;
   height: 100%;
   width: 55%;
-  margin: 80px 40px 80px 300px;
+  margin: 30px 40px 80px 80px;
 }
 
 .formInicio{
@@ -714,17 +725,12 @@ h2 {
   height: 500px;
   width: 380px;
   text-align: center;
+  
+
 }
 
 .hello {
-  background: rgba(247,247,247,1);
-  background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,247,247,1)), color-stop(3%, rgba(247,247,247,1)), color-stop(31%, rgba(255,232,138,1)), color-stop(100%, rgba(247,166,45,1)));
-  background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
-  background: -o-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
-  background: -ms-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
-  background: linear-gradient(to bottom, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7a62d', GradientType=0 );
+background-color: #333;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -747,33 +753,6 @@ h2 {
   text-align: center;
 }
 
-
-.lineHome{
-  width: 60%;
-  margin: 10px;
-}
-
-.containerWeb {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  width: 65%;
-}
-
-
-#homeContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Titillium Web", sans-serif;
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-}
-
 /*TEMPLATE CONTACTO*/
 
 .container-contacto{
@@ -784,7 +763,6 @@ h2 {
 label {
   display: flex;
 }
-
 
 #contactname, #contactmail, #contactphone , #contactcity  , #contactsubject, #coment, #contactbtn{ 
   margin: 20px;
@@ -801,30 +779,52 @@ label {
 
 }
 
-/*Reseñas*/
-.comments {
-width: 55%;
-height: 55%;
-border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+/*Comunibeer*/
 
+
+#containerWebComunity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.textComments {
+#banner {
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  height: 100%;
+}
+
+#containerSocialNetwork {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#reviewPostAndComments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+  width: 100%;
+}
+
+#review {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
   text-align: center;
 }
-/*fin*/
 
-#footerWeb{
-  padding-left: 100px;
-  color: #8a8a8a;
+#inputCommentsBeer, #inputReviewBeer {
+  resize: none;
 }
+
+/* input file  */
 
 /* Estrellas */
 .ec-stars-wrapper {
-	/* Espacio entre los inline-block (los hijos, los `a`) */
+	/* Espacio entre los inline-block (los hijos, los 'a') */
 	font-size: 0;
 	/* Podríamos quitarlo, 
 		pero de esta manera (siempre que no le demos padding), 
@@ -835,8 +835,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .ec-stars-wrapper a {
 	text-decoration: none;
 	display: inline-block;
-	/* Volver a dar tamaño al texto */
-	font-size: 32px;
 	font-size: 2rem;
 	
 	color: #888;
@@ -849,5 +847,107 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .ec-stars-wrapper > a:hover ~ a {
 	color: #888;
 }
-
 /* Fin Estrellas */
+
+.inputWeb {
+	background-color: rgb(224, 224, 224);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+  width: 60%;
+}
+.inputWeb:focus {
+  outline: 0.2px solid rgb(110, 110, 110);
+}
+
+#btnReview {
+  display: flex;
+}
+
+.btnWeb {
+  cursor: pointer;
+	border-radius: 20px;
+	border: 0.5px darkorange;
+  background-color: #f7a62d;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
+  0 1px 1px rgba(0,0,0,0.2);
+	font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btnWeb:active {
+  transform: scale(0.95);
+}
+
+.btnWeb:focus {
+  outline: none;
+}
+
+.btnWeb:hover {
+  background-color: #d88417;
+  transition: 0.3s;
+}
+
+#postAndComments {
+  width: 100%;
+  text-align: center;
+}
+
+#reviewPost {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#comments {
+  background: cadetblue;
+}
+
+btnComments {
+  display:flex;
+  justify-content: center;
+}
+
+#profileAndOthers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#profile {
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#spotify {
+  background: rgb(31, 31, 31);
+}
+
+#socialNetworkFooter {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+/* Fin nuevos estilos Comunibeer */
+
+.textComments {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*fin*/
+
+#footerWeb{
+  padding-left: 100px;
+  color: #8a8a8a;
+}
+
+.backgroundcolor{
+  background: linear-gradient(180deg, rgba(253,218,0,1) 60%, rgba(249,249,249,1) 100%);;
+}
+
