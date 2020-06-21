@@ -12,49 +12,65 @@ export const home = () => {
             <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
             <hr class="lineHome">
             <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
-            <button class="btnWeb" href="#registrarse">¡Quiero ser parte!</button>
+            <a href="#iniciarsesion"><button class="btnWeb">¡Quiero ser parte!</button></a>
           </div>
       </div>
       <div class="background-map"> 
         <div class="homeContent">
-         <h1>ENCUENTRA TUS LOCALES EN NUESTRO MAPA, ARREGLAR!!!</h1>
+         <h1 id="textMapHome">ENCUENTRA TUS LOCALES EN NUESTRO MAPA</h1>
         </div>
       </div> 
-  </div>  
+  </div> 
+  <footer>
+  <div class="container-primFooter"> 
+  </div> 
+  <div class="container-finFooter">
+   
+    <div class="logoSocialBeer"> 
+      <a href="#home"> 
+      <img src="./img/logo.png" alt="Logo del sitio"> 
+    </div>
+  
+    <div class="menuFooter">
+      <p class="opmenuFooter">
+        <a href="#blog"> Blog </a>
+        | &nbsp;
+        <a href="#comunibeer"> Comunibeer </a>
+        | &nbsp;
+        <a href="#dondebeber"> ¿Dónde beber? </a>
+        | &nbsp;
+        <a href="#eventos"> Eventos </a>
+        | &nbsp;
+        <a href="#abastecete"> ¡Abastécete! </a>
+        | &nbsp;
+        <a href="#cerveceriasChilenas"> Cervecerías Chilenas </a>
+      </p>
+  
+      <p class="menuiconsFooter"> 
+        <a href="#home"> 
+          <i class="fa fa-home iconFooter"> </i> 
+        </a>
+        <a href="#iniciarsesion"> 
+          <i class="fa fa-user iconFooter"></i> 
+        </a> 
+        <a href="#contacto"> 
+          <i class="fas fa-phone iconFooter"></i> 
+        </a>
+        <a href="https://open.spotify.com/embed/playlist/5vYkdZqio6UOLB1qtYGGVe?si=x3vZxUVlR3WUoaXy_tsg-A" target="_blank"> 
+          <i class="fas fa-music iconFooter"></i> 
+        </a>
+      </p>
+  
+        <p class="copyrigth">
+          ©️ 2020 Social Beer™️  | Todos los derechos reservados.
+        </p>
+      </div>
+      
+    </div>
+  
+  </footer> 
     `
 
   divHome.innerHTML = viewHome;
   return divHome;
 }
-
-
-
-export const registrarse = () => {
-  console.log("funciona");
-  const divRegistrarse = document.createElement('div');
-
-  const viewRegistrarse = `
-  <div class="container" id="containerInicio">
-  <div class="form-container sign-in-container">
-  <form action="#">
-  <h1 id="registrarse">Crea una cuenta</h1>
-  <div class="social-container">
-    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-  </div>
-  <input type="text" placeholder="Name" />
-  <input type="email" placeholder="Email" />
-  <input type="password" placeholder="Contraseña" />
-  <button>¡Unirse!</button>
-  </form>
-  </div>
-  </div >`
-
-
-  divRegistrarse.innerHTML = viewRegistrarse;
-  const btn = divRegistrarse.querySelector('#registrarse');
-  btn.addEventListener('click', () => {
-    login()
-  })
-  return divRegistrarse;
-};
